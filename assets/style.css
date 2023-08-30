@@ -86,6 +86,14 @@ ul li {
     width: 60vw;
 }
 
+.copy_button[data-copied="false"]:hover::before {
+    content: "Copy";
+}
+
+.copy_button[data-copied="true"]::before {
+    content: "Copied";
+}
+
 @media screen and (max-width:991px) {
     .middle_content {
         position: unset !important;
