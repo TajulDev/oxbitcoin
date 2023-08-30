@@ -81,12 +81,14 @@ ul li {
 .middle_content {
     position: absolute;
     /* top: 83px; */
-    left: 300px;
+    left: 20vw;
     height: auto;
+    width: 60vw;
 }
 
 @media screen and (max-width:991px) {
     .middle_content {
         position: unset !important;
+        width: 100%;
     }
 }
