@@ -5,16 +5,20 @@ document.addEventListener("DOMContentLoaded", function () {
     const child = parent.querySelector(".child");
     const arrowIcon = parent.querySelector(".fa-chevron-right");
 
-    parent.addEventListener("click", function () {
-      arrowIcon.classList.toggle("rotate-icon");
-      if (child.style.display === "block") {
-        child.style.display = "none";
-      } else {
-        child.style.display = "block";
+    parent.addEventListener("click", function (event) {
+      // Check if the click originated from the child element
+      if (!event.target.closest(".child")) {
+        arrowIcon.classList.toggle("rotate-icon");
+        if (child.style.display === "block") {
+          child.style.display = "none";
+        } else {
+          child.style.display = "block";
+        }
       }
     });
   });
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
   var copyButton = document.querySelector(".copy_text .btn");

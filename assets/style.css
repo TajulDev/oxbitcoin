@@ -94,6 +94,27 @@ ul li {
     content: "Copied";
 }
 
+.copy_text {
+    background-color: #1E1E1E;
+    padding: 16px 20px;
+    position: relative;
+
+}
+
+.copy_text button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+.copy_text p {
+    color: #e2e2e2;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
 @media screen and (max-width:991px) {
     .middle_content {
         position: unset !important;
