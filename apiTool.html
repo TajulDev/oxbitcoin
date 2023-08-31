@@ -24,22 +24,24 @@
                     <div style="width: 20vw;" class=" border-end">
                         <div class="ps-5 pe-3 d-flex justify-content-between align-items-center">
 
-                            <a href="/" class="fw-bold"><img width="50" src="./assets/images/logo.svg" alt="">
+                            <a href="#" class="fw-bold"><img width="50" src="./assets/images/logo.svg" alt="">
                                 0xBitcoin</a>
                             <button class="doc_btn border-0 rounded px-2 py-1">Docs</button>
                         </div>
                     </div>
                     <div style="width: 60vw;">
                         <div class="px-5 d-flex gap-4">
-                            <a href="#">CoinGecko
+                            <a href="https://www.coingecko.com/en/coins/0xbitcoin">CoinGecko
                             </a>
-                            <a href="#">Uniswap Info
+                            <a href="https://info.uniswap.org/#/tokens/0xb6ed7644c69416d67b522e20bc294a9a9b405b31">Uniswap
+                                Info
                             </a>
-                            <a href="#">White Paper
+                            <a href="https://github.com/0xbitcoin/white-paper">White Paper
                             </a>
-                            <a href="#">Dune Analytics
+                            <a href="https://dune.com/infernaltoast/0xBTC">Dune Analytics
                             </a>
-                            <a href="#">Smart Contract
+                            <a href="https://etherscan.io/address/0xb6ed7644c69416d67b522e20bc294a9a9b405b31#code">Smart
+                                Contract
                             </a>
 
                         </div>
@@ -109,7 +111,7 @@
                                     class="border-0 bg-white px-3 py-1 w-100 mb-3">
                                 <div class="d-flex flex-column gap-3">
                                     <div>
-                                        <a href="#"><i class="fa-solid fa-house pe-3"></i> Welcome</a>
+                                        <a href="./index.html"><i class="fa-solid fa-house pe-3"></i> Welcome</a>
                                     </div>
 
                                     <div class="parent">
@@ -153,11 +155,20 @@
 
                                 <div
                                     class="mb-3 d-flex flex-wrap gap-2 justify-content-center border-top border-bottom py-2">
-                                    <a href="#">CoinGecko</a>
-                                    <a href="#">Uniswap Info</a>
-                                    <a href="#">White Paper</a>
-                                    <a href="#">Dune Analytics</a>
-                                    <a href="#">Smart Contract</a>
+                                    <a href="https://www.coingecko.com/en/coins/0xbitcoin">CoinGecko
+                                    </a>
+                                    <a
+                                        href="https://info.uniswap.org/#/tokens/0xb6ed7644c69416d67b522e20bc294a9a9b405b31">Uniswap
+                                        Info
+                                    </a>
+                                    <a href="https://github.com/0xbitcoin/white-paper">White Paper
+                                    </a>
+                                    <a href="https://dune.com/infernaltoast/0xBTC">Dune Analytics
+                                    </a>
+                                    <a
+                                        href="https://etherscan.io/address/0xb6ed7644c69416d67b522e20bc294a9a9b405b31#code">Smart
+                                        Contract
+                                    </a>
                                 </div>
 
                                 <a target="_blank" href="https://retype.com/" class="power_by">
@@ -194,16 +205,16 @@
                         <input type="search" placeholder="Filter" class="border-0 bg-white px-3 py-1 w-100 mb-3">
                     </div>
                     <div class="d-flex flex-column gap-3 w-100">
-                        <div style="color: #60A5FA;background:#DBEAFE" class="w-100 p-2">
-                            <a href="#"><i class="fa-solid fa-house pe-3"></i> Welcome</a>
+                        <div class="w-100 p-2">
+                            <a href="./index.html"><i class="fa-solid fa-house pe-3"></i> Welcome</a>
                         </div>
 
-                        <div class="parent pe-3">
-                            <a href="#" class="toggle-btn d-flex justify-content-between align-items-center">
+                        <div class="parent">
+                            <a href="#" class="toggle-btn d-flex justify-content-between align-items-center pe-3">
                                 <span><i class="fa-regular fa-folder pe-3"></i> API Tools</span>
                                 <i class="fa-solid fa-chevron-right text-secondary"></i>
                             </a>
-                            <div class="child">
+                            <div style="color: #60A5FA;background:#DBEAFE" class="child pe-3 ">
                                 <a href="/apiTool.html">Open 0xBTC API</a>
                             </div>
                         </div>
@@ -256,26 +267,69 @@
         <div class="middle_content">
             <div class="body px-5 pt-4">
                 <h1 class="mb-5">Open 0xBTC API </h1>
-                <div class="copy_text rounded mb-5">
-                    <button type="button" class="btn text-secondary" data-bs-toggle="tooltip" data-bs-placement="left"
-                        title="Copy">
-                        <i class="fa-regular fa-copy"></i>
-                    </button>
-                    <p>Protocol: ERC20 </p>
-                    <p>Network: Ethereum Mainnet </p>
-                    <p>Contract Address: 0xb6ed7644c69416d67b522e20bc294a9a9b405b31</p>
+
+                <a class="mb-4 d-block" target="_blank" href="https://github.com/OpenSourceMfers/open-0xbtc-api">Find it
+                    on Github</a>
+                <p class="mb-4">The 'Open 0xBTC API' is an initiative to create a standardized decentralized api node
+                    for mining
+                    data. This is a self-hosted trustless API where data for 0xBTC is computed independently from a Web3
+                    Data Provider such as a Full Ethereum Node.</p>
+                <p class="mb-4">This API uses a local mongoDB to cache and compute on historical 0xBitcoin mint data.
+                </p>
+
+
+
+                <h5 class="mb-4">Using the API</h5>
+                <h5 class="mb-1">POST /api/mints/</h5>
+                <p class="mb-4">Returns data about recent 0xBTC mints. Returns all mint data in time Descending order.
+                </p>
+
+                <p class="mb-4">Input Fields</p>
+                <div class="d-flex align-items-center gap-1 mb-3">
+                    <code>contractAddress</code>
+                    <p>The contract address of the 0xBitcoin smart contract.</p>
+                </div>
+                <div class="d-flex align-items-center gap-1 mb-3">
+                    <code>size</code>
+                    <p> The amount of results to return. Maximum of 500. Default is 1.</p>
+                </div>
+                <div class="d-flex align-items-center gap-1 mb-3">
+                    <code>spacing</code>
+                    <p> The miningEpoch gap between each of the results to return. Default is 1.</p>
+                </div>
+                <div class="d-flex align-items-center gap-1 mb-5">
+                    <code>startEpoch</code>
+                    <p> The starting epoch of mint. Default is the latest mint epoch (closest to present time).</p>
                 </div>
 
 
 
 
-                <a href="/apiTool.html" class="next_btn border p-3 rounded-2 w-50 mb-5 ms-auto">
-                    <div class="text-end">
-                        <p class="text-secondary">Next</p>
-                        <h6 class="text-primary">Open 0​x​BTC API</h6>
-                    </div>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
+                <div class="mb-5">
+                    <a target="_blank" href="https://github.com/0xbitcoin/0xbtc-docs-retype/blob/main/src/index.md"><i
+                            class="fa-regular fa-pen-to-square"></i> Edit this page</a>
+                </div>
+                <div class="d-flex border rounded mb-5">
+
+                    <a href="./index.html" class="next_btn justify-content-start border-end  p-3  w-50 ">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <div class="">
+                            <p class="text-secondary">Previous
+
+
+                            </p>
+                            <h6 class="text-primary">Welcome</h6>
+                        </div>
+
+                    </a>
+                    <a href="./sol.html" class="next_btn  p-3  w-50  ms-auto">
+                        <div class="text-end">
+                            <p class="text-secondary">Next</p>
+                            <h6 class="text-primary">Approve​And​Call (sol)</h6>
+                        </div>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
 
 
 
@@ -297,11 +351,7 @@
                 </div>
             </div>
         </aside>
-
     </div>
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

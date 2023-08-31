@@ -21,6 +21,21 @@ header {
     background-color: white;
 }
 
+p {
+    font-size: 1rem;
+    color: #3F3F46;
+}
+
+code {
+    border-radius: 0.25rem;
+    border-width: 1px;
+    color: rgb(21 25 40/var(--tw-text-opacity));
+    line-height: 1;
+    padding: 2px 5px;
+    background-color: #f3f5f9;
+    border-color: rgb(225 229 239/var(--tw-border-opacity));
+}
+
 .sidebar {
     height: calc(100% - 83px);
 }
