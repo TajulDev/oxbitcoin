@@ -113,6 +113,11 @@ ul li {
     color: #e2e2e2;
     font-size: 13px;
     line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.copy_text p:last-child {
+    margin-bottom: 0;
 }
 
 @media screen and (max-width:991px) {
