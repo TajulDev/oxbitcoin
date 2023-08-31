@@ -1,11 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>0xBitcoin Documentaton</title>
+    <link rel="shortcut icon" href="./assets/images/logo.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
 </head>
+
 <body>
-    sollllll
+    <div style="position: relative;  height: 100vh;">
+        <!-- header part -->
+        <div style="position: sticky; top: 0;  width: 100%; z-index: 999;">
+            <header class="border-bottom py-3 d-none d-lg-block">
+                <div class="d-flex align-items-center m-0">
+                    <div style="width: 20vw;" class=" border-end">
+                        <div class="ps-5 pe-3 d-flex justify-content-between align-items-center">
+
+                            <a href="#" class="fw-bold"><img width="50" src="./assets/images/logo.svg" alt="">
+                                0xBitcoin</a>
+                            <button class="doc_btn border-0 rounded px-2 py-1">Docs</button>
+                        </div>
+                    </div>
+                    <div style="width: 60vw;">
+                        <div class="px-5 d-flex gap-4">
+                            <a href="https://www.coingecko.com/en/coins/0xbitcoin">CoinGecko
+                            </a>
+                            <a href="https://info.uniswap.org/#/tokens/0xb6ed7644c69416d67b522e20bc294a9a9b405b31">Uniswap
+                                Info
+                            </a>
+                            <a href="https://github.com/0xbitcoin/white-paper">White Paper
+                            </a>
+                            <a href="https://dune.com/infernaltoast/0xBTC">Dune Analytics
+                            </a>
+                            <a href="https://etherscan.io/address/0xb6ed7644c69416d67b522e20bc294a9a9b405b31#code">Smart
+                                Contract
+                            </a>
+
+                        </div>
+                    </div>
+                    <div style="width: 20vw;">
+                        <div class="pe-5 d-flex gap-3 align-items-center">
+                            <input type="search" placeholder="Search" class="border-0 rounded bg-light p-2">
+                            <a href="#" class="text-black"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="mb-px shrink-0" width="20" height="20" viewBox="0 0 24 24"
+                                    role="presentation" style="margin-bottom: 0px;">
+                                    <g fill="currentColor">
+                                        <g>
+                                            <path
+                                                d="M11 22C4.93 22 0 17.07 0 11S4.93 0 11 0s11 4.93 11 11-4.93 11-11 11zm0-20c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9z">
+                                            </path>
+                                            <path
+                                                d="M16.5 11c0 3.05-2.46 5.51-5.49 5.51-2.16 0-4.02-1.25-4.92-3.05-.11-.22.08-.49.32-.43 1.15.28 2.43.2 3.71-.42 1.88-.9 3.07-2.89 3.06-4.97 0-.42-.05-.83-.15-1.22-.06-.24.21-.43.43-.32 1.79.88 3.04 2.74 3.04 4.9z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg></a>
+
+                            <a href="#"><i class="fa-solid fa-clock-rotate-left text-black"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <header class="d-block d-lg-none p-2 border-bottom ">
+                <div class="d-flex gap-3 align-items-center justify-content-between">
+
+                    <button class="bg-transparent border-0 fs-1" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i
+                            class="fa-solid fa-bars"></i></button>
+                    <a href="/" class="fw-bold text-black fs-2"><img width="50" src="./assets/images/logo.svg" alt="">
+                        0xBitcoin</a>
+                    <div class="pe-5 d-flex gap-3 align-items-center">
+                        <a href="#" class="text-black"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0"
+                                width="20" height="20" viewBox="0 0 24 24" role="presentation"
+                                style="margin-bottom: 0px;">
+                                <g fill="currentColor">
+                                    <g>
+                                        <path
+                                            d="M11 22C4.93 22 0 17.07 0 11S4.93 0 11 0s11 4.93 11 11-4.93 11-11 11zm0-20c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9z">
+                                        </path>
+                                        <path
+                                            d="M16.5 11c0 3.05-2.46 5.51-5.49 5.51-2.16 0-4.02-1.25-4.92-3.05-.11-.22.08-.49.32-.43 1.15.28 2.43.2 3.71-.42 1.88-.9 3.07-2.89 3.06-4.97 0-.42-.05-.83-.15-1.22-.06-.24.21-.43.43-.32 1.79.88 3.04 2.74 3.04 4.9z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg></a>
+
+                        <a href="#"><i class="fa-solid fa-clock-rotate-left text-black"></i></a>
+                    </div>
+                </div>
+
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header gap-4">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <input type="search" placeholder="Filter" class="border bg-white px-3 py-1 w-100">
+                    </div>
+                    <div class="offcanvas-body p-0">
+                        <div class="sidebar d-flex flex-column justify-content-between">
+                            <div class="p-3">
+                                <input type="search" placeholder="Filter"
+                                    class="border-0 bg-white px-3 py-1 w-100 mb-3">
+                                <div class="d-flex flex-column gap-3">
+                                    <div>
+                                        <a href="./index.html"><i class="fa-solid fa-house pe-3"></i> Welcome</a>
+                                    </div>
+
+                                    <div class="parent">
+                                        <a href="#"
+                                            class="toggle-btn d-flex justify-content-between align-items-center">
+                                            <span><i class="fa-regular fa-folder pe-3"></i> API Tools</span>
+                                            <i class="fa-solid fa-chevron-right text-secondary"></i>
+                                        </a>
+                                        <div class="child">
+                                            <a href="/apiTool.html">Open 0xBTC API</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="parent">
+                                        <a class="toggle-btn d-flex justify-content-between align-items-center"
+                                            href="#">
+                                            <span><i class="fa-regular fa-folder pe-3"></i> Javascript</span>
+                                            <i class="fa-solid fa-chevron-right text-secondary"></i>
+                                        </a>
+                                        <div class="child">
+                                            <a href="./sol.html">ApproveAndCall (sol)</a>
+                                            <a href="./integration.html">Integration (js)</a>
+                                            <a href="./methods.html">Methods (js)</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="parent">
+                                        <a class="toggle-btn d-flex justify-content-between align-items-center"
+                                            href="#">
+                                            <span><i class="fa-regular fa-folder pe-3"></i> Reference</span>
+                                            <i class="fa-solid fa-chevron-right text-secondary"></i>
+                                        </a>
+                                        <div class="child">
+                                            <a href="./about.html">About 0xBitcoin</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+
+                                <div
+                                    class="mb-3 d-flex flex-wrap gap-2 justify-content-center border-top border-bottom py-2">
+                                    <a href="https://www.coingecko.com/en/coins/0xbitcoin">CoinGecko
+                                    </a>
+                                    <a
+                                        href="https://info.uniswap.org/#/tokens/0xb6ed7644c69416d67b522e20bc294a9a9b405b31">Uniswap
+                                        Info
+                                    </a>
+                                    <a href="https://github.com/0xbitcoin/white-paper">White Paper
+                                    </a>
+                                    <a href="https://dune.com/infernaltoast/0xBTC">Dune Analytics
+                                    </a>
+                                    <a
+                                        href="https://etherscan.io/address/0xb6ed7644c69416d67b522e20bc294a9a9b405b31#code">Smart
+                                        Contract
+                                    </a>
+                                </div>
+
+                                <a target="_blank" href="https://retype.com/" class="power_by">
+                                    <span>Powered by</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96"
+                                        height="20" overflow="visible">
+                                        <path
+                                            d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z">
+                                        </path>
+                                        <g>
+                                            <path
+                                                d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- sidebar part -->
+        <aside class="d-none d-lg-block"
+            style="position: fixed; left: 0; width: 20vw;  height: 100%; background-color:#F8F9FC">
+            <div class="sidebar ps-5 py-4  d-flex flex-column justify-content-between border-end">
+                <div>
+                    <div class="pe-3">
+
+                        <input type="search" placeholder="Filter" class="border-0 bg-white px-3 py-1 w-100 mb-3">
+                    </div>
+                    <div class="d-flex flex-column gap-3 w-100">
+                        <div style="color: #60A5FA;background:#DBEAFE" class="w-100 p-2">
+                            <a href="./index.html"><i class="fa-solid fa-house pe-3"></i> Welcome</a>
+                        </div>
+
+                        <div class="parent pe-3">
+                            <a href="#" class="toggle-btn d-flex justify-content-between align-items-center">
+                                <span><i class="fa-regular fa-folder pe-3"></i> API Tools</span>
+                                <i class="fa-solid fa-chevron-right text-secondary"></i>
+                            </a>
+                            <div class="child">
+                                <a href="/apiTool.html">Open 0xBTC API</a>
+                            </div>
+                        </div>
+
+                        <div class="parent pe-3">
+                            <a class="toggle-btn d-flex justify-content-between align-items-center" href="#">
+                                <span><i class="fa-regular fa-folder pe-3"></i> Javascript</span>
+                                <i class="fa-solid fa-chevron-right text-secondary"></i>
+                            </a>
+                            <div class="child d-flex flex-column">
+                                <a href="./sol.html">ApproveAndCall (sol)</a>
+                                <a href="./integration.html">Integration (js)</a>
+                                <a href="./methods.html">Methods (js)</a>
+                            </div>
+                        </div>
+
+                        <div class="parent pe-3">
+                            <a class="toggle-btn d-flex justify-content-between align-items-center" href="#">
+                                <span><i class="fa-regular fa-folder pe-3"></i> Reference</span>
+                                <i class="fa-solid fa-chevron-right text-secondary"></i>
+                            </a>
+                            <div class="child">
+                                <a href="./about.html">About 0xBitcoin</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a target="_blank" href="https://retype.com/" class="power_by">
+                    <span>Powered by</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20"
+                        overflow="visible">
+                        <path
+                            d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z">
+                        </path>
+                        <g>
+                            <path
+                                d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+
+
+            </div>
+        </aside>
+
+
+        <!-- content part -->
+        <div class="middle_content">
+            <div class="body px-5 pt-4">
+                <h1 class="mb-5">Approve And Call (sol) </h1>
+                <div class="copy_text rounded mb-5">
+                    <button type="button" class="btn text-secondary" data-bs-toggle="tooltip" data-bs-placement="left"
+                        title="Copy">
+                        <i class="fa-regular fa-copy"></i>
+                    </button>
+                    <p>
+                        function receiveApproval(address from, uint256 tokens, address token, bytes memory data) public
+                        returns (bool success) { <br> <br>
+
+                        /* <br>
+                        //recommended sample code <br> <br>
+
+                        require( msg.sender == currencyToken , "Invalid receiveApproval origin"); <br>
+                        require( token == currencyToken , "Invalid token type received"); <br>
+                        */ <br> <br>
+
+                        // _other_internal_calls_here... <br> <br>
+
+                        return true; <br> <br>
+
+                        }
+                    </p>
+
+                </div>
+
+
+                <div>
+                    <a target="_blank" href="https://github.com/0xbitcoin/0xbtc-docs-retype/blob/main/src/index.md"><i
+                            class="fa-regular fa-pen-to-square"></i> Edit this page</a>
+                </div>
+
+
+                <a href="/apiTool.html" class="next_btn border p-3 rounded-2 w-50 mb-5 ms-auto">
+                    <div class="text-end">
+                        <p class="text-secondary">Next</p>
+                        <h6 class="text-primary">Open 0​x​BTC API</h6>
+                    </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+
+
+
+                <footer class="border-top py-4">
+                    <p class="text-end text-secondary">0xBitcoin (0xBTC) Code and Documentation is Public Domain
+                        CC0.</p>
+                </footer>
+            </div>
+        </div>
+
+        <!-- right side bar -->
+        <aside class="d-none d-lg-block" style="position: fixed;  right: 0; width: 20vw; height: 100%;">
+            <div class="content pt-4 ps-3 border-start">
+                <p class="mb-4">Contents</p>
+                <div class="ps-3">
+                    <a href="#">ERC20 Methods </a> <br>
+                    <a href="#"> EIP918 Methods</a>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="./assets/script.js"></script>
 </body>
+
 </html>
